@@ -1,0 +1,143 @@
+/* Contact Section Styles */
+.contact {
+    padding: 5% 10%;
+  }
+  
+  .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 15px;
+  }
+  
+  .contact-info {
+    padding-right: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  
+  .contact-info p {
+    color: #aaa;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-details {
+    margin-bottom: 2rem;
+  }
+  
+  
+  .social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #b923e1;
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #b923e1;
+  }
+  
+  .submit-btn {
+    background: linear-gradient(267deg, #da7c25 0%, #b923e1 100%);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 1rem;
+    width: 30%;
+    margin-left: auto;
+  }
+  
+  .submit-btn:hover {
+    transform: scale(1.02);
+  }
+  
+ /* Previous CSS remains the same */
+
+.contact-item a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-item a:hover {
+  color: #b845fc;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Toast notification custom styles */
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(to right, #b845fc, #ff8c42);
+}
+
+.Toastify__toast--error {
+  background: #ff4444;
+}
+
+/* Added styles for form validation */
+.form-input.error {
+  border: 1px solid #ff4444;
+}
+
+.error-message {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Enhanced hover states */
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(184, 69, 252, 0.2);
+}
+
+.contact-item i {
+  font-size: 1.25rem;
+  width: 24px;
+  text-align: center;
+}

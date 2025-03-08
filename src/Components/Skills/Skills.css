@@ -1,0 +1,156 @@
+/*.skills-section {
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+  
+}
+
+.skills-header {
+  margin-bottom: 30px;
+}
+
+.skills-header h2 {
+  font-size: 32px;
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+}
+
+.accent-dot {
+  color: #b923e1;
+}
+
+.skills-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.skills-timeline-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.skills-timeline-year {
+  font-size: 18px;
+  font-weight: bold;
+  color: #b923e1;
+  margin-bottom: 10px;
+}
+
+.skills-timeline-content {
+  font-size: 16px;
+}
+
+.skills-timeline-role {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.skills-timeline-company {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.skills-timeline-description {
+  font-size: 14px;
+  color: #333;
+}*/
+
+.skills-section {
+  padding: 4rem 2rem;
+  color: #f4efef; /* Dark text for readability */
+}
+
+
+.skills-header {
+  position: relative;
+  text-align: center;
+  font-size: 2rem; /* Adjust as needed */
+  color: #fff; /* Matches your design */
+  margin-bottom: 20px; /* Spacing below header */
+}
+
+.skills-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-timeline-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  position: relative;
+}
+
+.skills-timeline-year {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: linear-gradient(270deg, #df8908 80%, #b415ff 30%); /* Accent color for the year */
+  flex-shrink: 0;
+  width: 80px;
+  text-align: right;
+}
+
+.skills-timeline-content {
+  background: linear-gradient(330deg, #ebbe79 2%, #d892f8 10%, #fff 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.skills-timeline-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #b923e1;
+}
+
+.skills-timeline-company {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.skills-timeline-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.skills-timeline::before {
+  content: '';
+  position: absolute;
+  left: 90px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #ddd;
+}
+
+.skills-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 84px;
+  top: 0.5rem;
+  width: 14px;
+  height: 14px;
+  color: #b923e1;
+  border: 2px solid linear-gradient(180deg, #df8908 60%, #b415ff 30%);;
+  background: linear-gradient(180deg, #df8908 60%, #b415ff 30%);;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

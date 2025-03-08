@@ -1,0 +1,134 @@
+/* About.css */
+
+.about-section {
+  color: #fff;
+  padding: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.projects-header img {
+  position: absolute;
+  bottom: -20px; /* Position the underline closer or farther */
+  left: 57%; /* Center the underline horizontally */
+  transform: translateX(-50%); /* Adjust for centering */
+  width: 300px; /* Increase the width for a larger underline */
+  height: 40px; /* Increase the height for a thicker underline */
+}
+
+.projects-header {
+  position: relative;
+  text-align: center;
+  font-size: 3.5rem; /* Adjust as needed */
+  color: #fff; /* Matches your design */
+  margin-bottom: 10px; /* Spacing below header */
+}
+
+
+
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.about-title-dot {
+  color: #b923e1;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap; /* Essential for responsiveness */
+  justify-content: center; /* Center horizontally on larger screens */
+  align-items: flex-start; /* Align items to the top on smaller screens */
+  gap: 40px;
+}
+
+.profile-image1 { /* No need for extra div */
+  border-radius: 10px;
+  overflow: hidden; /* Prevents border radius issues */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image1 img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid transparent;
+  background: linear-gradient(to right, #b923e1, #ff7849);
+  padding: 5px;
+  display: block; /* Prevents a small gap at the bottom of image */
+  filter: grayscale(100%); 
+}
+
+.profile-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-description {
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+  gap: 20px;
+  line-height: 1.6;
+}
+
+.tools-section {
+  margin-top: 30px;
+}
+
+.tools-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+    background: linear-gradient(90deg, #b923e1, #eebae6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #d3d3d3;
+}
+
+.tool-icon {
+  font-size: 30px;
+  color: #d782ef;
+  margin-bottom: 10px;
+}
+
+.tool-name {
+  font-size: 16px;
+}
+
+/* ... rest of your CSS (statistics-grid, etc.) ... */
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .about-content {
+    align-items: center; /* Center items vertically on smaller screens */
+    text-align: center; /* Center the text within the description */
+  }
+
+  .about-description{
+    text-align: left;
+  }
+}

@@ -1,0 +1,85 @@
+.hero-container {
+  text-align: center;
+  padding: 50px 20px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  
+}
+
+.hero-heading {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #b923e1, #ff7849);
+  -webkit-background-clip: text;
+  /* Original line (assumed) */
+-webkit-background-clip: text;
+
+/* Fixed version */
+-webkit-background-clip: text;
+background-clip: text;
+
+-webkit-text-fill-color: transparent;
+}
+
+.white-text {
+  color: white;
+}
+
+.hero-description {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  color: #d3d3d3;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.primary-button, .secondary-button {
+  padding: 1rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  text-decoration: none;
+}
+
+.primary-button {
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+}
+
+.secondary-button {
+  background: #333;
+}
+
+.primary-button:hover, .secondary-button:hover {
+  opacity: 0.8;
+}
