@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Navbar.css';
+import navUnderline from './assets/nav_underline.svg';
 
 const Navbar = () => {
   const [menu, setMenu] = useState("home");
@@ -21,7 +22,8 @@ const Navbar = () => {
           <li>
             <a href="#home" onClick={() => setMenu("home")}>
               Home
-              {menu === "home" && <img src='/assets/nav_underline.svg' alt='underline' />}
+              {/* {menu === "home" && <img src='/assets/nav_underline.svg' alt='underline' />} */}
+              {menu === "home" && <img src={navUnderline} alt='underline' />}
             </a>
           </li>
           <li>
