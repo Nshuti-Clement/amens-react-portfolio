@@ -21,7 +21,7 @@ const Navbar = () => {
           <li>
             <a href="#home" onClick={() => setMenu("home")}>
               Home
-              {menu === "home" && <img src='./src/assets/nav_underline.svg' alt='underline' />}
+              {menu === "home" && <img src='/assets/nav_underline.svg' alt='underline' />}
             </a>
           </li>
           <li>
